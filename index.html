@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <!--  -->
+
+<head>
+    <!--  -->
     <meta charset="UTF-8"> <!-- Caractere que en español tenemos -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> <!-- título de la pestaña del navegador -->
 
     <!-- Aquí se colocan estilos -->
     <!-- asdf -->
 
 </head>
+
 <body>
     <h1> Mi primer etiqueta </h1>
     <h2> <b>Mi segunda</b> etiqueta</h2>
@@ -17,6 +20,24 @@
     <h4> Mi cuarta etiqueta </h4>
     <h5> Mi quinta etiqueta </h5>
     <h6> Mi sexta etiqueta </h6>
-    <p> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Similique quas aliquam aut possimus omnis eum odit qui quos porro, aliquid tempore voluptates assumenda velit! Pariatur veritatis minus enim laudantium veniam.</p>
+    <p> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Similique quas aliquam aut.</p>
+
+    <!-- Un form al dar clic nos permite hacer algo al dar clic-->
+    <!-- https://developer.mozilla.org/es/docs/Web/HTML/Element/legend para ver mas 
+    El placeholder nos ayuda colocar en cada entrada colocar de qué es cada uno 
+    El min - max nos permite colocar un rango para el número 
+    al colocar [required] va a ser una casilla que sin esa no va a avanzar -->
+    <form action="">
+        <legend>Información Personal</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="Nombre" placeholder="Nombre">
+        <input type="text" name="apellido" placeholder="Apellido"><br>
+        <input type="number" name="Edad" placeholder="Edad" min="18" max="35"><br>
+        <input type="email" placeholder="email"><br>
+        <input type="password" placeholder="Password" required><br>
+        <button type="submit">Enviar</button>
+    </form>
+
 </body>
+
 </html>
