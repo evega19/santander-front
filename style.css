@@ -27,3 +27,6 @@ body{
     margin-bottom: 0px;
 
 }
+li{
+    display: inline;
+}
