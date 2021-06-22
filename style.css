@@ -102,3 +102,18 @@ a todos sus hijos */
   .publicity h2{
       color: #025157;
   }
+
+  .promo{
+      display: flex;
+      /* Con sólo flex, ya ordena las cosas */
+      width: 70%;
+      margin: 100px auto;
+      /* con 100 px auto, 100px arriba y abajo */
+      align-items: center;
+  }
+  .video{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px;
+  }
