@@ -89,3 +89,16 @@ a todos sus hijos */
     border: 0;
     border-radius: 5px;
   }
+
+  .publicity{
+    font-family: sans-serif;
+  }
+
+  .publicity > p{
+      color: #343434;
+
+  }
+
+  .publicity h2{
+      color: #025157;
+  }
