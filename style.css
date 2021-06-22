@@ -117,3 +117,13 @@ a todos sus hijos */
       align-items: center;
       margin-right: 20px;
   }
+
+  .fixed-header {
+    position: fixed;
+    background-color: white;
+    /* Esto sólo se puede agregar a una sección */
+    top: 0;
+    left: 0;
+    right: 0;
+    
+  }
