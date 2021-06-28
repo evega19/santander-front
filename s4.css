@@ -1,0 +1,31 @@
+
+.container{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; este es el default */
+
+}
+
+.container >.item{
+    background-color: gray;
+    width: 30%;
+    height: 30px;
+}
+
+.main{
+    /* s[olo deja el tama;o que requiere */
+    display: flex; 
+}
+
+.main div:nth-of-type(1){
+    /* Mostramos cual es el espacio disponible que puede crecer */
+    flex-grow: 1;
+}
+
+.main div:nth-of-type(4){
+    /* Mostramos cual es el espacio disponible que puede crecer */
+    flex-grow: 1;
+}
