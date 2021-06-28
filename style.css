@@ -264,6 +264,7 @@ a todos sus hijos */
     border-radius: 5px;
     display: flex;
     overflow: hidden;
+    align-items: center;
   }
 
   .features .features-art .features-art-content{
@@ -297,8 +298,14 @@ a todos sus hijos */
 
   .features .features-art .features-art-image{
     flex: 1;
-    width: 20%;
-    position: relative;
-    right: -30px;
-    height: 40%;
+    width: 100px;
+  }
+
+  .features .features-art .features-art-image img{
+    width: 400px;
+  }
+
+  .features .features-art .features-art-image .image2{
+    height: 250px;
+    width: 200px;
   }
