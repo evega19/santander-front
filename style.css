@@ -309,3 +309,118 @@ a todos sus hijos */
     height: 250px;
     width: 200px;
   }
+
+  .matchaWorks{
+    display: flex;
+    background-color: #fffbf7;
+    padding: 5% 10%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .matchaWorks .explain{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    
+  }
+
+  .matchaWorks .explain a{
+    color: #67b54b;
+    text-decoration: none;
+  }
+
+  .matchaWorks .explain h2 {
+    color: #025157;
+    font-size: 50px;
+    font-family: "Alegreya", serif;
+    margin-bottom: 8px;
+    font-family: "Alegreya", serif;
+  }
+
+  .matchaWorks .explain p{
+    max-width: 60%;
+    color: #46484c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  .matchaWorks .explain button{
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 6px;
+    height: 45px;
+  }
+
+  .matchaWorks .cards{
+     padding: 5% 10%;
+     display: grid;
+     grid-template-columns:  repeat(4, 1fr);
+  }
+
+  .matchaWorks .cards .card-step{
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+    display: block;
+  }
+
+  .matchaWorks .cards .card-step .card-step-image{
+    position: relative;
+    height: 350px;;
+  }
+
+  .matchaWorks .cards .card-step .card-step-bg{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-style: none;
+  }
+
+  .matchaWorks .cards .card-step .card-step-icon{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 21px;
+  }
+
+  .matchaWorks .cards .card-step .card-step-body{
+    padding: 25px;
+    box-sizing: border-box;
+  }
+
+  .matchaWorks .cards .card-step h3{
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Alegreya", serif;
+    color: #025157;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .matchaWorks .cards .card-step p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #46484c;
+    font-weight: 400;
+    height: 85px;
+    margin-bottom: 16px;
+  }
+
+  .matchaWorks .cards .card-step a{
+    font-size: 16px;
+    line-height: 1.4;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
