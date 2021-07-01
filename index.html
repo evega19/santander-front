@@ -43,31 +43,39 @@
         </header>
     </section>
     
+    <main>
+        <h1> Mi primer etiqueta </h1>
+        <h2> <b>Mi segunda</b> etiqueta</h2>
+        <h3> Mi tercera etiqueta </h3>
+        <h4> Mi cuarta etiqueta </h4>
+        <h5> Mi quinta etiqueta </h5>
+        <h6> Mi sexta etiqueta </h6>
+        <p> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Similique quas aliquam aut.</p>
+        <figure class="banner">
+            <img alt="Logo de matcha" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" />
+          </figure>
+      
+    </main>
 
 
-    <h1> Mi primer etiqueta </h1>
-    <h2> <b>Mi segunda</b> etiqueta</h2>
-    <h3> Mi tercera etiqueta </h3>
-    <h4> Mi cuarta etiqueta </h4>
-    <h5> Mi quinta etiqueta </h5>
-    <h6> Mi sexta etiqueta </h6>
-    <p> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Similique quas aliquam aut.</p>
-
+    
     <!-- Un form al dar clic nos permite hacer algo al dar clic-->
     <!-- https://developer.mozilla.org/es/docs/Web/HTML/Element/legend para ver mas 
     El placeholder nos ayuda colocar en cada entrada colocar de qué es cada uno 
     El min - max nos permite colocar un rango para el número 
     al colocar [required] va a ser una casilla que sin esa no va a avanzar -->
-    <form action="">
-        <legend>Información Personal</legend>
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="Nombre" placeholder="Nombre">
-        <input type="text" name="apellido" placeholder="Apellido"><br>
-        <input type="number" name="Edad" placeholder="Edad" min="18" max="35"><br>
-        <input type="email" placeholder="email"><br>
-        <input type="password" placeholder="Password" required><br>
-        <button type="submit">Enviar</button>
-    </form> <br>
+    <article class="publish">
+        <form action="">
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="Nombre" placeholder="Nombre">
+            <input type="text" name="apellido" placeholder="Apellido">
+            <input type="number" name="Edad" placeholder="Edad" min="18" max="35">
+            <input type="email" placeholder="email">
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Enviar</button>
+        </form> 
+    </article>
 
     <!-- Parte para agregar una iimagen -->
     <!-- https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML -->
