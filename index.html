@@ -8,6 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiPrimerPágina</title> <!-- título de la pestaña del navegador -->
 
+
+    <!-- Este es la función bootstrap, la idea es pegarlo antes de nuestras modificaciones para que estas
+    remplacen https://getbootstrap.com/ -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <!-- En este caso importamos la versión 5 -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <!-- Aquí se colocan estilos -->
     <link rel="stylesheet" href="./style.css">
 
@@ -15,34 +24,134 @@
 
 <body>
 
+    <!-- /* Comentamos este navbar para evitar conflictos con bootstrap */ -->
     <!-- Cada etiqueta se recomienda que tenga un class -->
-    <section class="fixed-header">
+    <!-- <section class="fixed-header">
         <header class="header">
-            <!-- Aquí va nuestro encabezado -->
-            <!-- la etiqueta a hace una referencia 
-                para ir a un lugar -->
+             Aquí va nuestro encabezado
+            la etiqueta a hace una referencia 
+                para ir a un lugar
             <a href="/" class="logo">
                 <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="">
             </a>
-            <!-- Menú de navegación -->
+            Menú de navegación
             <nav class="navbar">
-                <!-- lista ul -->
+                lista ul
                 <ul>
-                    <!-- cada eqtiqueta submenu -->
+                     cada eqtiqueta submenu
                     <li>Acerca de</li>
                     <li>Compras</li>
                     <li>Recomendaciones</li>
                 </ul>
             </nav>
             <div class="actions">
-                <!-- Cosas para navegar -->
+                Cosas para navegar
                 <a>Sing In</a>
                 <button>Register</button>
             </div>
     
         </header>
-    </section>
+    </section> -->
     
+
+    <!-- Nuestra barra de navegación comentada va aquí -->
+
+    <!-- Para hacer funciónes usadas en este caso son clases ya predefinidas para ello debemos entrar a la página de boostrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+        <img
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+            alt="Matcha"
+        />
+        </a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Cambiar el mr por mx para centrar, m (margin) y la r (right), al cambiarle por x(center) -->
+            <!-- https://getbootstrap.com/docs/4.4/utilities/spacing/  -->
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Platform</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Customers</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <a>Sign In</a>
+            <button>Start free trial</button>
+        </form>
+        </div>
+    </nav>
+
+    <!-- Agregmos el reto del carousel -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <!-- Aquí colocamos indicadores del carousel -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <!-- Aquí agregamos ejemplos -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://1.bp.blogspot.com/-0kt6ekXtQrA/VQzbzppVR-I/AAAAAAACi6U/-8DXV8UxDKs/s1600/Atardecer%2Ben%2Bla%2Bplaya.jpg" 
+            class="d-block w-100" alt="...">
+            <!-- Con esto agregamos la descripción del carousel -->
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/R097c7c15103d99cb550b364ea5fdb4bc?rik=l6LKngwV6sDnpw&riu=http%3a%2f%2fimagenpng.com%2fwp-content%2fuploads%2f2017%2f01%2ffondo4.jpg&ehk=1%2fiPbN3K%2fV5MtVZljVD9nGs7S3p61qoUmNXHvYKzYlk%3d&risl=&pid=ImgRaw" 
+            class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/R0b3029c9c37749c563dd288de3d7293e?rik=8jv8Zv4owxCowg&riu=http%3a%2f%2fimagenesparacelulares.net%2fwp-content%2fuploads%2f2014%2f09%2f442538.jpg&ehk=R%2biQQcOCWqu6mhQXvgcKqYp1%2fSZLYq8MaExTdotRFw8%3d&risl=&pid=ImgRaw" 
+            class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    <!--  -->
+
     <main>
         <h1> Mi primer etiqueta </h1>
         <h2> <b>Mi segunda</b> etiqueta</h2>
@@ -248,6 +357,27 @@
               </article>
         </article>
     </section>
+
+
+    <!-- Una página sin javascript es muy estática -->
+    <!-- Antes de cerrarse el body se cierra -->
+    <!-- Esto es lo que usa bootstrap para darle funcionalidad a la página -->
+
+    <script 
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"
+    ></script>
 
 </body>
 

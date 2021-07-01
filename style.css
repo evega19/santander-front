@@ -1,3 +1,9 @@
+
+.carousel-item > img {
+  height: 500px;
+  width: 600px;
+}
+
 h1 {
     color: rgba(212, 108, 38, 0.473);
     font-size: 100px;
@@ -55,11 +61,12 @@ a todos sus hijos */
     width: 15%;
     
  }
- .navbar{
+ /* Comentamos este navbar para evitar conflictos con bootstrap */
+ /* .navbar{
      width: 70%;
      text-align: center;
      color: #025157;
- }
+ } */
 
  ul > li {
     margin-right: 10px;
@@ -433,9 +440,11 @@ a todos sus hijos */
   body{
     background-color: #15dd1fad;
   }
-  .navbar, .actions{
+
+  /* Comentamos este navbar para evitar conflictos con bootstrap */
+  /* .navbar, .actions{
     display: none;
-  }
+  } */
 
   main {
     margin-top: 130px;
