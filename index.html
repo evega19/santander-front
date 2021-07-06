@@ -57,7 +57,7 @@
     <!-- Nuestra barra de navegación comentada va aquí -->
 
     <!-- Para hacer funciónes usadas en este caso son clases ya predefinidas para ello debemos entrar a la página de boostrap -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">
         <img
             src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
@@ -81,10 +81,10 @@
             <!-- https://getbootstrap.com/docs/4.4/utilities/spacing/  -->
         <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-            <a class="nav-link" href="#">Platform</a>
+            <a class="nav-link" href="./index.html">Platform</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="./pricing.html">Pricing</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#">Customers</a>
@@ -153,17 +153,29 @@
     <!--  -->
 
     <main>
-        <h1> Mi primer etiqueta </h1>
-        <h2> <b>Mi segunda</b> etiqueta</h2>
-        <h3> Mi tercera etiqueta </h3>
-        <h4> Mi cuarta etiqueta </h4>
-        <h5> Mi quinta etiqueta </h5>
-        <h6> Mi sexta etiqueta </h6>
-        <p> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Similique quas aliquam aut.</p>
-        <figure class="banner">
-            <img alt="Logo de matcha" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" />
-          </figure>
-      
+      <h1>Build your blog. Build your business.</h1>
+      <h4>
+        Instantly publish articles, drive more traffic, grow your email list,
+        and see your blog’s impact on sales.
+      </h4>
+      <form class="signup-form">
+        <input type="email" placeholder="Enter email address">
+        <button type="submit">
+          Try it now →
+        </button>
+      </form>
+      <p>
+        Start publishing today with a <strong>free 7-day trial.</strong>
+        <br>
+        <strong>No credit card</strong> required.
+      </p>
+      <figure class="banner">
+        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="Capterra">
+      </figure>
+
+      <figure class="intro">
+        <img src="https://getmatcha.com/wp-content/uploads/2019/09/intro_group_image.png" alt="Intro Matcha">
+      </figure>
     </main>
 
 
@@ -173,7 +185,8 @@
     El placeholder nos ayuda colocar en cada entrada colocar de qué es cada uno 
     El min - max nos permite colocar un rango para el número 
     al colocar [required] va a ser una casilla que sin esa no va a avanzar -->
-    <article class="publish">
+
+    <!-- <article class="publish">
         <form action="">
             <legend>Información Personal</legend>
             <label for="nombre">Nombre:</label>
@@ -184,16 +197,17 @@
             <input type="password" placeholder="Password" required>
             <button type="submit">Enviar</button>
         </form> 
-    </article>
+    </article> -->
 
     <!-- Parte para agregar una iimagen -->
     <!-- https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML -->
     <!-- El alt es muy importante ya que sirve para que describa de que son las imagenes para la accesibilidad -->
     <!-- No se recomienda colocar el title a las imágenes debido a que afecta a la accesibilidad de lectura automática -->
-    <img src="https://media1.tenor.com/images/cf8e2fe033a9fdc5c1c9fc666bbe38e7/tenor.gif?itemid=14261036" 
+
+    <!-- <img src="https://media1.tenor.com/images/cf8e2fe033a9fdc5c1c9fc666bbe38e7/tenor.gif?itemid=14261036" 
     alt="Este es un mensaje por si la imagen no furual"
     width="200px"
-    title="Gamer">
+    title="Gamer"> -->
 
     <section class="promo">
         <!-- No puede funcionar con videos de youtube -->
